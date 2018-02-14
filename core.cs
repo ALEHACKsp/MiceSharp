@@ -1,8 +1,10 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,11 +13,15 @@ namespace AobAutoInjection
     class Program
     {
 
+        [DllImport("kernel32.dll", CharSet = CharSet.None, ExactSpelling = false)]
+        public static extern uint GetLastError();
 
         static void Main(string[] args)
         {
-            
-           
+            string ProcessName;
+            Process Mice;
+            ProcessName = "Transformice";
+            Mice = Process.GetProcessesByName(ProcessName)[0];
             Console.Title = "MiceSharp";
             Console.WriteLine("=========================================");
             Console.WriteLine("             Mice Sharp Logger           ");
@@ -54,7 +60,7 @@ namespace AobAutoInjection
                     string[] split = Aobs[i].Split(',');
 
 
-                    AobsInject.Add(scan.ScanArray(scan.GetPID("Transformice"), split[0]));
+                    AobsInject.Add(scan.ScanArray(Mice, split[0]));
                     Trocas.Add(split[1]);
                     try
                     {
@@ -111,6 +117,12 @@ namespace AobAutoInjection
                 Console.ReadLine();
             }
         }
+
+
+
         
+
+
+       
     }
 }
