@@ -46,7 +46,7 @@ namespace AobAutoInjection
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     scan.WriteArray(AobsInject[a][0], Trocas[a]);
-                    Console.WriteLine($"[{AobsInject[a][0]}] Troca: " + Trocas[a] + " => Sucess.");
+                    Console.WriteLine($"[{AobsInject[a][0]}] Troca: " + Trocas[a] + " => Success.");
                     
                 }
                 
