@@ -23,4 +23,7 @@ This is the first official version 🏇🏻
 
 👨🏻‍💻 [Paulo Henrique](https://github.com/paulohenriquesn/)  - Programming
 
+<<<<<<< HEAD
+👨🏻‍💻 [Luan Devecchi](https://github.com/LuanDevecchi) - Programming
+=======
 👨🏻‍💻 [Luan Devecchi](https://github.com/LuanDevecchi) - Programming
