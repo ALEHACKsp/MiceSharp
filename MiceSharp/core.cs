@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using MiceSharp.Welcome;
 using MiceSharp.Hooks;
 using MiceSharp.Bypass;
+using MiceSharp.Engine;
 
 namespace MiceSharpCore
 {
@@ -29,7 +30,7 @@ namespace MiceSharpCore
             Console.WriteLine("=========================================");
             Console.WriteLine("             Initializing...             ");
             Console.WriteLine("=========================================");
-            DotNetScanMemory_SmoLL scan = new DotNetScanMemory_SmoLL();
+            MemoryEngine scan = new MemoryEngine();
             bypass.dobypass();
 
             List<string> Aobs = new List<string>();
