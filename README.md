@@ -17,7 +17,8 @@ Place your's AoB in the AoBs.JSON and what you want to write on that array after
 5. Submit a pull request :D
 ## History 🌈
 
-This is the first official version 🏇🏻
+v0.1 || The first official version 🏇🏻
+v0.2 || Standalone Memory Lib 🤡
 
 ## Credits
 
